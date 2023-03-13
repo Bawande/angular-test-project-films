@@ -1,0 +1,12 @@
+@mixin container($width: 1440px, $offset: 25px) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc($width);
+  margin: 0 auto;
+  padding: 0 calc($offset);
+}
+
+.container {
+  @include container();
+  min-width: 320px;
+}

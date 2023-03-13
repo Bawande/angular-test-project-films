@@ -1,0 +1,85 @@
+.film-card {
+  width: 100%;
+  max-width: 210px;
+  height: 400px;
+  overflow: hidden;
+  padding: 15px 20px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+
+  display: flex;
+
+  &__wrapper {
+    cursor: pointer;
+  }
+
+  &__poster {
+    display: block;
+    width: 100%;
+    height: 225px;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    & > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    max-height: 32px;
+
+    overflow: hidden;
+
+    color: #1d1838;
+  }
+
+  &__description {
+    padding: 0 !important;
+  }
+
+  &__genre {
+    margin-bottom: 10px;
+  }
+  &__genre,
+  &__release-year {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #1d1838;
+  }
+
+  &__action {
+    height: 30px;
+    padding: 0;
+    min-height: 48px;
+    justify-content: end;
+
+    margin-top: auto;
+    color: transparent;
+    transition: color 0.2s ease;
+  }
+
+  &__favorites.is-favorite {
+    color: #1d1838;
+  }
+
+  &:hover > &__action {
+    color: #c7c7c7;
+  }
+
+  &__favorites:hover {
+    color: #1d1838;
+  }
+}
