@@ -1,7 +1,5 @@
 ## Задание
 
-Ознако
-
 Верстка карточек с фильмами: https://bawande.github.io/angular-test-project-films/
 
 **Этап 1**
